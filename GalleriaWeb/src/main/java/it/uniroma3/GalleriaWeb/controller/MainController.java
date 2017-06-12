@@ -1,5 +1,12 @@
 package it.uniroma3.GalleriaWeb.controller;
 
-public class MainController {
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
 
+public class MainController {
+	  // Login form
+	  @RequestMapping("/login")
+	  public String login() {
+	    return "login";
+	  }
 }
