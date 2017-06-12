@@ -18,7 +18,7 @@ public class AutoreService{
         return this.autoreRepository.findBycognome(cognome);
     }
     public Iterable<Autore> findBynazionalità(String nazionalità) {
-        return this.autoreRepository.findBynazionalità(nazionalità);
+        return this.autoreRepository.findByNazionalita(nazionalità);
     }
 
     @Transactional
